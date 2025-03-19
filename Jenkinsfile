@@ -747,7 +747,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/sathya033/Integrated-Chat-App.git', branch: 'master'
+                git url: 'https://github.com/sathya033/app.git', branch: 'master'
             }
         }
 
