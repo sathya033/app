@@ -720,7 +720,7 @@ pipeline {
     }
 
     environment {
-        NODE_VERSION = "16"
+        NODE_VERSION = "18"
     }
 
     stages {
@@ -802,7 +802,7 @@ pipeline {
                     where ng >nul 2>nul
                     if %ERRORLEVEL% NEQ 0 (
                         echo Angular CLI not found. Installing...
-                        npm install -g @angular/cli@16
+                        npm install -g @angular/cli@14
                     ) else (
                         echo Angular CLI is already installed.
                     )
