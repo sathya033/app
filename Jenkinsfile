@@ -650,7 +650,7 @@ pipeline {
     }
 
     environment {
-        NODE_VERSION = "18"
+        NODE_VERSION = "18.18.1"
         NVM_HOME = "C:\\Users\\sathiyamoorthim\\AppData\\Local\\nvm"
         NVM_SYMLINK = "C:\\nvm4w\\nodejs"
         PATH = "${env.NVM_HOME};${env.NVM_SYMLINK};${env.PATH}"
@@ -714,7 +714,7 @@ pipeline {
                     npm list -g @angular/cli | findstr @angular/cli >nul
                     if %ERRORLEVEL% NEQ 0 (
                         echo Angular CLI not found. Installing...
-                        npm install -g @angular/cli@14
+                        npm install -g @angular/cli@14.2.0
                         if %ERRORLEVEL% NEQ 0 (
                             echo Failed to install Angular CLI!
                             exit /b 1
