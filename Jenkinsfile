@@ -692,7 +692,7 @@ pipeline {
                     echo Installing frontend dependencies...
                     if exist package.json (
                         echo package.json found. Running npm install...
-                        npm install --legacy-peer-deps
+                        npm ci --legacy-peer-deps
                         if %ERRORLEVEL% NEQ 0 (
                             echo Error installing dependencies!
                             exit /b 1
